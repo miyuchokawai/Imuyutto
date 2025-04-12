@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to right, #1e1f4b, #4b1f57);
+    color: white;
+    font-family: "Arial", sans-serif;
+    padding: 20px;
+}
+header, section, footer {
+    margin-bottom: 40px;
+}
+a { color: #ffccff; }
+#yutto {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    z-index: 1000;
+    animation: walk 20s linear infinite;
+    cursor: pointer;
+}
+@keyframes walk {
+    0% { left: -100px; }
+    50% { left: 50vw; }
+    100% { left: 110vw; }
+}
+#toggle-music {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+}
+#secret-spot {
+    position: absolute;
+    right: 30px;
+    top: 100px;
+    width: 50px;
+    height: 50px;
+}
+input { margin: 5px; padding: 5px; }
+
+
+/* 讓整體內容置中 */
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
